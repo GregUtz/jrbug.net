@@ -31,3 +31,15 @@ Preview the upload without changing the bucket:
 .\scripts\deploy.ps1 -DryRun
 ```
 
+## Broadcast configuration
+
+Edit `site/config.js` to connect the page to a broadcast:
+
+- `status`: `offline`, `programmed`, or `live`
+- `audioStreamUrl`: browser-compatible audio stream URL
+- `videoStreamUrl`: optional browser-compatible video stream URL
+- `showTitle` and `showSubtitle`: current program information
+- `nextShow` and `nextShowNote`: schedule messaging
+- `playlist`: programmed-show selections with `title` and `duration` values
+
+The site stays in a complete offline state when stream URLs are empty.
