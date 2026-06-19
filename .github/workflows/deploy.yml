@@ -29,6 +29,7 @@ jobs:
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v3
         with:
+          project_id: wise-zephyr-204219
           workload_identity_provider: projects/924177605853/locations/global/workloadIdentityPools/github-actions/providers/jrbug-net
           service_account: github-jrbug-deployer@wise-zephyr-204219.iam.gserviceaccount.com
 
